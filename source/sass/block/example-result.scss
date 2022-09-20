@@ -1,0 +1,173 @@
+.example-result {
+  width: 100%;
+}
+
+.example-result__heading {
+  font-weight: 400;
+
+  margin: 0;
+}
+
+.example-result__history {
+  margin: 0;
+
+  font-family: "Arial", sans-serif;
+}
+
+@media (max-width: $mobile-width) {
+
+  .example-result {
+    background-color: $bg-2;
+  }
+
+  .example-result__wrapper {
+    width: 320px;
+    margin: 0 auto;
+    padding-top: 17px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+  }
+
+  .example-result__heading {
+    margin-bottom: 24px;
+
+    font-size: 36px;
+    line-height: 60px;
+  }
+
+  .example-result__history {
+    width: 266px;
+    margin-bottom: 25px;
+
+    font-size: 14px;
+    line-height: 18px;
+    color: $color-2;
+  }
+
+  .example-result__cost {
+    margin: 0;
+    margin-bottom: 45px;
+
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    text-align: center;
+  }
+
+}
+
+@media (min-width: $tablet-width) {
+
+  .example-result {
+    padding-bottom: 65px;
+
+    background: linear-gradient(to top, $bg-2 462px, $bg-1 200px, $bg-1);
+  }
+
+  .example-result__wrapper {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .example-result__heading {
+    font-size: 60px;
+    line-height: 60px;
+
+    padding-top: 33px;
+    padding-left: 30px;
+    margin-bottom: 60px;
+
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .example-result__text-wrapper {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .example-result__history {
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-2;
+
+    padding-right: 30px;
+    margin-bottom: 41px;
+  }
+
+  .example-result__stats-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 70px;
+  }
+
+  .example-result__cost {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: right;
+
+    width: 175px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+
+  .example-result {
+    padding: 0;
+
+    background: linear-gradient(to top, $bg-2 462px, $bg-1 462px, $bg-1);
+  }
+
+  .example-result__wrapper {
+    position: relative;
+
+    width: 1220px;
+    padding-top: 0;
+  }
+
+  .example-result__heading {
+    border: none;
+    margin-bottom: 140px;
+    padding-top: 16px;
+    padding-left: 0;
+  }
+
+  .example-result__text-wrapper {
+    padding: 0;
+    padding-right: 800px;
+    padding-bottom: 70px;
+  }
+
+  .example-result__history {
+    margin-bottom: 70px;
+    padding-right: 0;
+  }
+
+  .example-result__stats-wrapper {
+    display: block;
+    margin: 0;
+  }
+
+  .example-result__cost {
+    width: 100%;
+    margin: 0;
+
+    text-align: left;
+  }
+
+  .example-result__cost span {
+    margin-left: 60px;
+  }
+
+  .example-result__toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+}

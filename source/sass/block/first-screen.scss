@@ -1,0 +1,128 @@
+.first-screen__heading {
+  font-weight: 400;
+
+  margin: 0;
+}
+
+@media (max-width: $mobile-width) {
+
+  .first-screen {
+    padding-top: 27px;
+
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+    }
+
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .first-screen__heading {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .first-screen__call {
+    margin-top: 24px;
+    margin-bottom: 30px;
+
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+  }
+
+  .first-screen__program-btn {
+    margin-bottom: 22px;
+  }
+
+}
+
+
+@media (min-width: $tablet-width) {
+
+  .first-screen {
+    position: relative;
+
+    width: 708px;
+    padding-top: 0;
+    padding-bottom: 530px;
+    padding-left: 127px;
+
+    background: none;
+
+    text-align: left;
+    color: $color-1;
+  }
+
+  .first-screen__heading {
+    font-size: 60px;
+    line-height: 60px;
+
+    width: 420px;
+    margin-bottom: 42px;
+  }
+
+  .first-screen__call {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    margin: 0;
+    margin-bottom: 48px;
+  }
+
+  .first-screen__image {
+    position: absolute;
+
+    width: 709px;
+    height: 609px;
+
+    left: 30px;
+    bottom: 0;
+    z-index: -2;
+  }
+
+  .first-screen__program-btn {
+    width: 245px;
+    height: 52px;
+    padding-top: 14px;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    z-index: 2;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+
+  .first-screen {
+    position: relative;
+
+    padding-bottom: 188px;
+    padding-left: 190px;
+  }
+
+  .first-screen__heading {
+    width: 450px;
+  }
+
+  .first-screen__heading--index-page {
+    padding-top: 30px;
+  }
+
+  .first-screen__image {
+    top: -50px;
+    left: 560px;
+
+    width: 552px;
+    height: 500px;
+
+    z-index: 3;
+  }
+
+}
